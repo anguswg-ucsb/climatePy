@@ -117,6 +117,7 @@ def test_climatepy_filter(AOI):
                         model=["CSIRO-Mk3-6-0"], ensemble="XXXX",
                         scenario=['rcp45', 'rcp85'], startDate="2079-10-01")
 
+# test out ensemble handling in climatepy_filter
 def test_ensemble():
     # NULL
     x = climatePy._climatepy_filter.climatepy_filter(id="loca", varname="tasmin", model='GISS-E2-R', scenario='rcp45', startDate="2050-01-01")
